@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Dylan</title>
+   <link rel="stylesheet" href="style.css">
+   <!-- Font awesome import -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<body>
+   <header class="header">
+      <a href="#home" class="logo">Hacquard Dylan</a>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+         <a href="#home" class="active">Home</a>
+         <a href="#aboutme">About Me</a>
+         <a href="#project">Projets</a>
+         <a href="#all_skills">Skills</a>
+         <a href="#education">Veille</a>
+         <a href="#contact">Contact</a>
+      </nav>
+   </header>
+
+   <section class="home" id="home">
+      <!-- <div class="home-img"> 
+         <img src="/assets/image/hacker.jpg" alt="">
+      </div>-->
+
+      <div class="home-content">
+         <h1 data-aos="fade-left"><i class="fa-solid fa-hand" style="color: #2eb0f0;"></i><span>,</span></h1>
+         <h3 class="typing-text" data-aos="fade-left"> I'm <span></span></h3>
+         <p data-aos="fade-left">Je suis actuellement étudiant en BTS SIO Option SISR a la Busniness School Notre Dame a Villefranche-Sur-Saone</p>
+
+         <div class="social-icon" data-aos="fade-up"
+         data-aos-duration="1000">
+            <a href="https://www.linkedin.com/in/dylan-hacquard/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/roothd"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/Ro0Thd"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://discord.gg/cWkaPtjhqc"><i class="fa-brands fa-discord"></i></a>
+         </div>
+
+         <div class="home-button" data-aos="zoom-in" data-aos-duration="1000">
+            <a href="#cv">
+               <button class="button button2">
+                  <p>My CV</p>
+               </button>
+           </a>        
+            <a href="#contact">
+               <button class="button button2">
+                  <p>Contact Me</p>
+               </button>
+           </a>
+         </div>
+      </div>
+   </section>
+   <!-- About ME -->
+   <section class="aboutme" id="aboutme">
+   <div>
+      <div class="container">
+          <div class="row">
+              <div class="about_col2">
+              <h1 class="sub_title">A Propos de moi</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque delectus nihil nisi. Neque ut dolore impedit cum quia consequuntur perspiciatis incidunt. Nisi eos voluptatem magnam illum, a maiores itaque tempore!
+              Ab nostrum aspernatur officia recusandae aliquam a.</p>
+              <div class="tab_titles">
+                  <p class="tab_links active-link" onclick="opentab('skills')">Compétences</p>
+                  <p class="tab_links" onclick="opentab('experience')">Experience</p>
+                  <p class="tab_links" onclick="opentab('projects')">Projets</p>
+              </div>
+              <div class="tab_contents active-tab" id="skills">
+                  <ul>
+                      <li><span> Réseaux</span><br> Routeur, Switch, Firewall </li>
+                      <li><span>Pentest</span><br> Exploitation de vulnérabilités, outils spécialisés, Hacker éthique</li>
+                      <li><span> Web developpement </span><br> Réalisation de site responsive en HTML/CSS/Javascript</li>
+                  </ul>
+                  <a href="#all_skills">
+                      <div class ="arrow"></div>
+                      <p>All my skills</p>
+                  </a>
+  
+              </div>
+              <div class="tab_contents" id="experience">
+                  <ul>
+                      <li><span>2024 - En cours</span><br>BTS SIO</li>
+                      <li><span>2024</span><br> Stage a TA Informatique </li>
+                      <li><span>2020 - 2023</span><br> Baccalauréat en Sport Etudes</li>
+                  </ul>
+              </div>
+              <div class="tab_contents" id="projects">
+                  <ul>
+                      <li><span>Codage de mon site Internet </span><br> Base en HTML / CSS / JavaScript / Python</li>
+                      <li><span>Pentest</span><br> Apprendre le pentesting de ma propre initiative grace à des sites comme HackTheBox ou encore TryHackMe</li>
+                      <li><span>Improve my skills</span><br> learn everyday new things about the IT</li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>  
+  <script>
+      var tablinks = document.getElementsByClassName("tab_links");
+      var tabcontents = document.getElementsByClassName("tab_contents");
+  
+      function opentab(tabname) {
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link")
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab")
+      }
+  </script>
+
+   <section class="services" id="project">
+      <h2 class="heading">Projets</h2>
+
+      <div class="service-container">
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fa-solid fa-user-secret"></i>
+               </span>
+               <h3 class="title">Pentest</h3>
+               <p class="description">J'apprend a exploiter des failles a l'aide de machines virtuels dédiées a cela comme sur HackTheBox.</p>
+               <a href="https://ctf.hackthebox.com/teams/my-teams" class="learn-more">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fas fa-laptop-code"></i>
+               </span>
+               <h3 class="title">Web Developer</h3>
+               <p class="description">J'apprend a coder des sites internet comme celui ci par exemple <i class="fa-regular fa-face-smile"></i>, mais aussi pour des amis.</p>
+               <a href="https://github.com/roothd" class="learn-more">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fa-solid fa-gamepad"></i>
+               </span>
+               <h3 class="title">Game Development</h3>
+               <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur illum sed odit? Aspernatur, debitis repudiandae.</p>
+               <a href="#" class="learn-more">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fa-solid fa-toilet-portable"></i>
+               </span>
+               <h3 class="title">Montage de PC Gamer</h3>
+               <p class="description">Je monte des ordinateurs pour mes amis ou alors pour des entreprises lors de mes stages en entreprises.</p>
+               <a href="#" class="learn-more">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fas fa-chart-pie"></i>
+               </span>
+               <h3 class="title">Business Consulting</h3>
+               <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur illum sed odit? Aspernatur, debitis repudiandae.</p>
+               <a href="#" class="learn-more">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+         <div class="single-service" data-aos="zoom-in-up">
+            <div class="content">
+               <span class="icon">
+                  <i class="fa-solid fa-building"></i>
+               </span>
+               <h3 class="title">Gestion de patrimoine</h3>
+               <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur illum sed odit? Aspernatur, debitis repudiandae.</p>
+               <a href="#" class="learn-more" id="all_skills">En savoir plus...</a>
+            </div>
+            <span class="circle-before"></span>
+         </div>
+      </div>
+   </section>
+
+   <section class="skills">
+      <h2 class="heading">Skills</h2>
+      <div class="container">
+         <div class="row" id="skillsContainer">
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/script-java.png"/>
+                  <span>JavaScript</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/dns.png"/>
+                  <span>Cisco</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/virtualbox.png"/>
+                  <span>Virtualisation</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/plate-forme-linux.png"/>
+                  <span>Linux</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/les-fenetres.png"/>
+                  <span>Windows</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/logo-mac-os.png"/>
+                  <span>Mac OS</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/programme.png"/>
+                  <span>MySQL</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/html.png"/>
+                  <span>HTML</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/css.png"/>
+                  <span>CSS</span>
+               </div>
+            </div>
+            <div class="bar" data-aos="flip-left">
+               <div class="info">
+                  <img src="assets/image/skills/script-java.png"/>
+                  <span>JavaScript</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="education" id="education">
+      <div class="title-veille">
+         <h2 class="heading">Veille Informatique</h2>
+         <p>La cybersécurité est un enjeu primordial à l'ère du numérique. Cette veille explore les dernières menaces, les réglementations et les meilleures pratiques pour se protéger.</p>
+         <!-- <h3>Pourquoi la veille est-elle importante ?</h3> 
+         <ul>
+            <li>Anticipation des risques</li>
+            <li>Réduction des coûts</li>
+            <li>Amélioration de la réputation</li>
+            <li>Conformité réglementaire</li>
+         </ul>-->
+      </div>
+      <div class="timeline">
+         <div class="container right">
+            <div class="content" data-aos="fade-left">
+               <div class="tag">
+                  <h2>Menaces émergentes </h2>
+               </div>
+               <div class="desc">
+                  <p>Rester informé des nouvelles techniques de hacking, des vulnérabilités découvertes et
+                      des vecteurs d'attaque les plus récents (ransomware, phishing, attaques par zero-day, etc.)</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container left">
+            <div class="content" data-aos="fade-right">
+               <div class="tag">
+                  <h2>Suivi des évolutions réglementaires</h2>
+               </div>
+               <div class="desc">
+                  <p>Les réglementations en matière de protection des données (RGPD, CCPA, etc.) évoluent rapidement.
+                      Il est important de se tenir informé des nouvelles exigences pour assurer la conformité de votre organisation.</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container right" >
+            <div class="content" data-aos="fade-left">
+               <div class="tag">
+                  <h2>Analyse des vulnérabilités des systèmes</h2>
+               </div>
+               <div class="desc">
+                  <p>Une veille régulière permet d'identifier les failles de sécurité présentes dans vos systèmes 
+                     et applications, afin de pouvoir y remédier rapidement.</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container left">
+            <div class="content" data-aos="fade-right">
+               <div class="tag">
+                  <h2>Étude des meilleures pratiques</h2>
+               </div>
+               <div class="desc">
+                  <p>Découvrir les meilleures pratiques en matière de sécurité informatique,
+                      telles que la segmentation des réseaux, le chiffrement des données, la sensibilisation des employés, etc.</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container right">
+            <div class="content" data-aos="fade-left">
+               <div class="tag">
+                  <h2>Évaluation des solutions de sécurité</h2>
+               </div>
+               <div class="desc">
+                  <p>Permet de comparer les différentes solutions de sécurité disponibles 
+                     sur le marché et de choisir celles qui correspondent le mieux à vos besoins.</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="container left">
+            <div class="content" data-aos="fade-right">
+               <div class="tag">
+                  <h2>Analyse des incidents de sécurité</h2>
+               </div>
+               <div class="desc" id="cv">
+                  <p>L'étude des incidents de sécurité survenus dans d'autres organisations 
+                     permet de tirer des enseignements et d'adapter vos propres mesures de sécurité.</p>
+                  <div class="veille">
+                     <a href="#" class="learn-more">En savoir plus...</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="contact" id="contact">
+      <div class="container">
+         <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><i class="fa-solid fa-paper-plane"></i>dylanhacquard@outlook.com</p>
+               <div class="social-icon">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fa-brands fa-github"></i></a>
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+               </div>
+               <button class="btn-cv">
+                  <a href="assets/image/cvdylan.pdf" download="CV_H-Dylan">Download CV</a>
+               </button>
+            </div>
+            <div class="contact-right">
+               <form action="">
+                  <input type="text" name="name" placeholder="Your Name" required>
+                  <input type="email" name="email" placeholder="Your Email" required>
+                  <textarea name="Message" id="" rows="4" placeholder="Your Message"></textarea>
+                  <button class="button">
+                     <p>Submit</p>
+                  </button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <footer class="footer">
+      <div class="social">
+         <a href="https://www.linkedin.com/in/dylan-hacquard/"><i class="fa-brands fa-linkedin-in"></i></a>
+         <a href="https://github.com/roothd"><i class="fa-brands fa-github"></i></a>
+         <a href="https://x.com/Ro0Thd"><i class="fa-brands fa-x-twitter"></i></a>
+         <a href="https://discord.gg/cWkaPtjhqc"><i class="fa-brands fa-discord"></i></a>
+      </div>
+      <ul class="list">
+         <li><a href="#">FAQ's</a></li>
+         <li><a href="#">Service</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+         <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">
+         © Copyright 2024 | Hacquard Dylan
+      </p>
+   </footer>
+
+   <script src="script.js"></script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+   </script>
+</body>
+</html>
