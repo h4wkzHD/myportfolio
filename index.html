@@ -350,81 +350,83 @@
       </div>
     </section>
 
-  <section class="outils" id="outils">
-<div class="container mx-auto">
-  <h2 class="heading">Mes Outils</h2>
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-    <div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl"> <!-- Augmentation de padding ici -->
-      <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4"> <!-- Taille de la police augmentée -->
-        <i class="fas fa-server mr-3"></i>Virtualisation et Conteneurs
-      </h2>
-      <div class="grid gap-6">
-        <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800"> <!-- Augmenter le padding et la taille du texte -->
-          <img src="assets/image/skills/virtualbox.png" alt="VMware" class="w-10 h-10"/> <!-- Augmenter la taille de l'image -->
-          <span>VirtualBox</span>
-          <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-5 py-3">Virtualisation</span> <!-- Augmenter la taille du badge -->
+ 
+<section class="outils" id="outils">
+  <div class="container mx-auto">
+    <h2 class="heading">Mes Outils</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl flex flex-col h-full">
+        <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4 flex items-center">
+          <i class="fas fa-server mr-3"></i>Virtualisation et Conteneurs
+        </h2>
+        <div class="grid gap-6 flex-grow">
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/virtualbox.png" alt="VirtualBox" class="w-12 h-12">
+            <span class="flex-grow">VirtualBox</span>
+            <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-4 py-2">Virtualisation</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/vmware.png" alt="VMware vSphere" class="w-12 h-12">
+            <span class="flex-grow">VMware vSphere</span>
+            <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-4 py-2">Virtualisation</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/sociale.png" alt="Docker" class="w-12 h-12">
+            <span class="flex-grow">Docker</span>
+            <span class="ml-auto text-sm bg-teal-500 text-white rounded-full px-4 py-2">Conteneurs</span>
+          </div>
         </div>
-        <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-          <img src="assets/image/skills/vmware.png" alt="Hyper-V" class="w-10 h-10"/>
-          <span>VMware vSphere</span>
-          <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-5 py-3">Virtualisation</span>
+      </div>
+
+      <div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl flex flex-col h-full">
+        <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4 flex items-center">
+          <i class="fas fa-code mr-3"></i>Développement et Collaboration
+        </h2>
+        <div class="grid gap-6 flex-grow">
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/vscode.png" alt="VSCode" class="w-12 h-12">
+            <span class="flex-grow">VSCode</span>
+            <span class="ml-auto text-sm bg-green-500 text-white rounded-full px-4 py-2">Éditeur</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/github.png" alt="GitHub" class="w-12 h-12">
+            <span class="flex-grow">GitHub</span>
+            <span class="ml-auto text-sm bg-gray-500 text-white rounded-full px-4 py-2">Code</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/google.png" alt="Google Suite" class="w-12 h-12">
+            <span class="flex-grow">Google Suite</span>
+            <span class="ml-auto text-sm bg-yellow-500 text-white rounded-full px-4 py-2">Collaboration</span>
+          </div>
         </div>
-        <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-          <img src="assets/image/skills/sociale.png" alt="Docker" class="w-10 h-10"/>
-          <span>Docker</span>
-          <span class="ml-auto text-sm bg-teal-500 text-white rounded-full px-5 py-3">Conteneurs</span>
+      </div>
+
+      <div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl flex flex-col h-full">
+        <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4 flex items-center">
+          <i class="fas fa-network-wired mr-3"></i>Outils spécifiques
+        </h2>
+        <div class="grid gap-6 flex-grow">
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/cisco.png" alt="Cisco" class="w-12 h-12">
+            <span class="flex-grow">Cisco</span>
+            <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-4 py-2">Configuration</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/exegol.png" alt="Exegol" class="w-12 h-12">
+            <span class="flex-grow">Exegol</span>
+            <span class="ml-auto text-sm bg-purple-500 text-white rounded-full px-4 py-2">Gestion de configuration</span>
+          </div>
+          <div class="skill2 p-6 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800 flex-grow">
+            <img src="assets/image/skills/suricata.png" alt="Suricata" class="w-12 h-12">
+            <span class="flex-grow">Suricata</span>
+            <span class="ml-auto text-sm bg-red-500 text-white rounded-full px-4 py-2">Sécurité</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-    <div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl"> <!-- Augmentation de padding ici -->
-  <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4"> <!-- Taille de la police augmentée -->
-    <i class="fas fa-code mr-3"></i>Développement et Collaboration
-  </h2>
-  <div class="grid gap-6">
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800"> <!-- Augmenter le padding et la taille du texte -->
-      <img src="assets/image/skills/vscode.png" alt="VSCode" class="w-10 h-10"/> <!-- Augmenter la taille de l'image -->
-      <span>VSCode</span>
-      <span class="ml-auto text-sm bg-green-500 text-white rounded-full px-5 py-3">Éditeur</span> <!-- Augmenter la taille du badge -->
-    </div>
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-      <img src="assets/image/skills/github.png" alt="GitHub" class="w-10 h-10"/>
-      <span>GitHub</span>
-      <span class="ml-auto text-sm bg-gray-500 text-white rounded-full px-5 py-3">Code</span>
-    </div>
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-      <img src="assets/image/skills/google.png" alt="Google Suite" class="w-10 h-10"/>
-      <span>Google Suite</span>
-      <span class="ml-auto text-sm bg-yellow-500 text-white rounded-full px-5 py-3">Collaboration</span>
-    </div>
-  </div>
-</div>
-
-<div class="category-card bg-[#121212] rounded-xl p-12 shadow-lg hover:shadow-2xl"> <!-- Augmentation de padding ici -->
-  <h2 class="text-3xl font-semibold mb-8 text-[#2eb0f0] border-b-4 border-[#2eb0f0] pb-4"> <!-- Taille de la police augmentée -->
-    <i class="fas fa-network-wired mr-3"></i>Outils spécifiques
-  </h2>
-  <div class="grid gap-6">
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800"> <!-- Augmenter le padding et la taille du texte -->
-      <img src="assets/image/skills/cisco.png" alt="Cisco" class="w-10 h-10"/> <!-- Augmenter la taille de l'image -->
-      <span>Cisco</span>
-      <span class="ml-auto text-sm bg-blue-500 text-white rounded-full px-5 py-3">Configuration</span> <!-- Augmenter la taille du badge -->
-    </div>
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-      <img src="assets/image/skills/exegol.png" alt="Exegol" class="w-10 h-10"/>
-      <span>Exegol</span>
-      <span class="ml-auto text-sm bg-purple-500 text-white rounded-full px-5 py-3">Gestion de configuration</span>
-    </div>
-    <div class="skill2 p-10 flex items-center gap-8 text-xl bg-[#000000] text-white rounded-lg hover:bg-gray-800">
-      <img src="assets/image/skills/suricata.png" alt="Suricata" class="w-10 h-10"/>
-      <span>Suricata</span>
-      <span class="ml-auto text-sm bg-red-500 text-white rounded-full px-5 py-3">Sécurité</span>
-    </div>
-  </div>
-</div>
 </section>
+
 
     <!-- veille -->
 
