@@ -1,1 +1,1 @@
-💼 This portfolio was created as part of my BTS SIO
+💼 Here you'll find my projects, experiences, and learning journey in IT,
